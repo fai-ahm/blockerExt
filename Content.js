@@ -1,11 +1,12 @@
 window.onload = (event) => {
+
+    //this only returns true if time is exactly 12 not if it is after 12 zz.
     var blockingCondition = dateTime();
 
     // Faisal's Task    
     if (blockingCondition) {
         if (window.location.hostname === "www.youtube.com") {
-        console.log("Block these websites, until we click done");
-        document.body.innerHTML = `
+            document.body.innerHTML = `
             <div style="
             position: absolute;
             top: 50%;
