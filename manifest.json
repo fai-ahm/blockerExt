@@ -10,7 +10,7 @@
       ],
       "js": [
         "Content.js",
-        "dateTime.js"
+        "midnight-check.js"
       ]
     }
   ],

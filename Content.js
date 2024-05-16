@@ -1,7 +1,23 @@
-const blockingCondition = true;
-
 window.onload = (event) => {
-    dateTime();
+    var blockingCondition = dateTime();
+
+    // Faisal's Task    
+    if (blockingCondition) {
+        if (window.location.hostname === "www.youtube.com") {
+        console.log("Block these websites, until we click done");
+        document.body.innerHTML = `
+            <div style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 200px;
+            ">
+            <h1>Work First, bitch!</h1>
+            </div>`;
+        }
+    }
+  
 }
 
 // Task for Nabeel.
@@ -22,21 +38,4 @@ var mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
 var yyyy = today.getFullYear();
 today = mm + '/' + dd + '/' + yyyy;
 */
-
-// Faisal's Task
-if (blockingCondition) {
-  if (window.location.hostname === "www.youtube.com") {
-    console.log("Block these websites, until we click done");
-    document.body.innerHTML = `
-      <div style="
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 200px;
-      ">
-        <h1>Work First, bitch!</h1>
-      </div>`;
-  }
-}
 
